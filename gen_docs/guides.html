@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guides &mdash; TypeD(R|S) Documentation 05.11.2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=05167a12"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Start" href="start.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #4a4a4a" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TypeD(R|S) Documentation
+              <img src="_static/protok_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="start.html">Getting Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html#download">Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#add-flm-to-keil">Add FLM to Keil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#about-keil-project">About Keil Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#simulator">Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#nxp-jtag-firmware-update">NXP JTAG firmware update</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#assets">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-firmware-from-boot">Update firmware from boot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-with-ui">Working with UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#screen-presets">Screen presets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recommendations">Recommendations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #4a4a4a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TypeD(R|S) Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Guides</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/guides.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="guides">
+<h1>Guides<a class="headerlink" href="#guides" title="Link to this heading"></a></h1>
+<section id="assets">
+<h2>Assets<a class="headerlink" href="#assets" title="Link to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>make sure all images are in <cite>EEZ-&gt;assets</cite> folder</p>
+</div>
+<p>Compile the project with the <cite>incbin_assets</cite> utility enabled in DFP</p>
+<a class="reference internal image-reference" href="_images/keil_update_assets.png"><img alt="Error load image" class="align-center" src="_images/keil_update_assets.png" style="width: 400px;" />
+</a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After flashing with assets, you can turn off the utility for faster flashing</p>
+</div>
+</section>
+<section id="update-firmware-from-boot">
+<h2>Update firmware from boot<a class="headerlink" href="#update-firmware-from-boot" title="Link to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The panel firmware should be carried out only using the updater utility (except for software developers)</p>
+</div>
+<ol class="arabic simple">
+<li><p>Run the updater</p></li>
+<li><p>Connect the panel via usb or ethernet</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you use USB, you need to install the drivers available for download on the page with the updater (right click on fsl_ucwxp and install)</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you are using Ethernet, you need to configure the adapter as follows                                     IPv4: 192.168.111.12 | Mask: 255.255.255.0 | DNS 8.8.8.8 and 8.8.4.4</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the panel is connected, you will see its name, the app version, and the DFPs currently loaded.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>After selecting the firmware file, the firmware button is unlocked via the interface through which the board is connected</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More details about working with the updater can be found on its  <a class="reference external" href="application.rst#updater">page</a></p>
+</div>
+</section>
+<section id="working-with-ui">
+<h2>Working with UI<a class="headerlink" href="#working-with-ui" title="Link to this heading"></a></h2>
+<section id="screen-presets">
+<h3>Screen presets<a class="headerlink" href="#screen-presets" title="Link to this heading"></a></h3>
+<p>Presets are variable structures with 2 LVGL screens, this is necessary to ensure the best performance of the panel, for convenience it is recommended to name the screens in eez studio as follows:</p>
+<p><cite>screen_ico_preset_example</cite></p>
+<p><cite>screen_background_preset_example</cite></p>
+<p>Presets are initialized in the function <cite>ui_init</cite> (app_ui.c) and the loading screen is selected in it, this function needs to be written from eez studio</p>
+<p>Example of filling ui_init:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Variables */</span>
+<span class="n">Screen_Preset</span><span class="w"> </span><span class="n">preset_example</span><span class="p">;</span>
+
+<span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : ui_init</span>
+<span class="cm">* Description    : Initializes ... (Priviliged Mode)</span>
+<span class="cm">* Input          : -</span>
+<span class="cm">* Output         : -</span>
+<span class="cm">* Return         : -</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">ui_init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/*  create all screens &amp; objects   */</span>
+<span class="w">    </span><span class="n">create_screens</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/*  create events   */</span>
+<span class="w">    </span><span class="n">ui_init_events</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/* creating presets */</span>
+<span class="w">    </span><span class="n">ui_preset_screen_create</span><span class="p">(</span><span class="o">&amp;</span><span class="n">preset_example</span><span class="p">,</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">screen_background_preset_example</span><span class="p">,</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">screen_ico_preset_example</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/* starting screen */</span>
+<span class="w">    </span><span class="n">ui_preset_screen_load</span><span class="p">(</span><span class="o">&amp;</span><span class="n">preset_example</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>It is also necessary to call the screen creation functions in the correct order, this is done at the very bottom of the app_screens.c module, the create_screens function, this is done in the eez studio code editor (as everything that eez generates)</p>
+<p>Example of filling create_screens:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : create_screens</span>
+<span class="cm">* Description    : init all screens</span>
+<span class="cm">* Input          : -</span>
+<span class="cm">* Output         : -</span>
+<span class="cm">* Return         : -</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">create_screens</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/* init backgrounds */</span>
+<span class="w">    </span><span class="n">lv_disp_set_default</span><span class="p">(</span><span class="n">disp_background</span><span class="p">);</span>
+<span class="w">    </span><span class="n">create_screen_screen_background_preset_example</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/* init ico */</span>
+<span class="w">    </span><span class="n">lv_disp_set_default</span><span class="p">(</span><span class="n">disp_ico</span><span class="p">);</span>
+<span class="w">    </span><span class="n">create_screen_ico_preset_example</span><span class="p">();</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="events">
+<h3>Events<a class="headerlink" href="#events" title="Link to this heading"></a></h3>
+<p>To work with events, go to the app_events.c module</p>
+<p>It has the ui_init_events function, it defines/initializes all events for objects on the display (LVGL objects)</p>
+<p>Event initialize example:</p>
+<p><cite>lv_obj_add_event_cb(youre_object, event_handler_youre_object, LV_EVENT_TYPE, NULL);</cite></p>
+<ul class="simple">
+<li><p>youre_object -&gt; any lvgl object from your project</p></li>
+<li><p>event_handler_youre_object -&gt; a void type function that accepts an event type</p></li>
+<li><p>LV_EVENT_TYPE -&gt; event receiving by the object (most often LV_EVENT_ALL is used)</p></li>
+<li><p>NULL -&gt; user data in lvgl (permanently = NULL)</p></li>
+</ul>
+<p>in case you need to initialize one event handler for multiple objects, it is recommended to create an array in which you need to write all the objects and add the event in a for loop</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Private define ------------------------------------------------------------*/</span>
+<span class="cp">#define LIST_OBJ_NUM 10 </span><span class="c1">// number of array objects</span>
+
+<span class="cm">/* Private variables ---------------------------------------------------------*/</span>
+
+<span class="n">lv_obj_t</span><span class="w"> </span><span class="o">*</span><span class="n">list_ico</span><span class="p">[</span><span class="n">LIST_OBJ_NUM</span><span class="p">];</span><span class="w"> </span><span class="c1">// objects array</span>
+<span class="cm">/* protorypes functions */</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">event_obj_enable</span><span class="p">(</span><span class="n">lv_event</span><span class="w"> </span><span class="o">*</span><span class="n">e</span><span class="p">);</span>
+
+<span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : ui_init_list_ico</span>
+<span class="cm">* Description    : ...</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ui_init_list_ico</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj1</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj2</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj3</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj4</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj6</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj7</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj8</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj9</span><span class="p">;</span>
+<span class="w">    </span><span class="n">list_ico</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj10</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : ui_init_events</span>
+<span class="cm">* Description    : init all events &amp; anims</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">ui_init_events</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/* init list ... */</span>
+<span class="w">    </span><span class="n">ui_init_list_ico</span><span class="p">();</span>
+
+
+
+<span class="w">    </span><span class="cm">/* events for all buttons for freq */</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">obj_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">obj_num</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">LIST_OBJ_NUM</span><span class="p">;</span><span class="w"> </span><span class="n">obj_num</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">lv_obj_add_event_cb</span><span class="p">(</span><span class="n">list_freq</span><span class="p">[</span><span class="n">obj_num</span><span class="p">],</span><span class="w"> </span><span class="n">event_obj_enable</span><span class="p">,</span><span class="w"> </span><span class="n">LV_EVENT_RELEASED</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : event_button_released</span>
+<span class="cm">* Description    : ...</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">event_obj_enable</span><span class="p">(</span><span class="n">lv_event_t</span><span class="w"> </span><span class="o">*</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/* get event type */</span>
+<span class="w">    </span><span class="n">lv_event_code_t</span><span class="w"> </span><span class="n">event_code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lv_event_get_code</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/* get object target */</span>
+<span class="w">    </span><span class="n">lv_obj_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lv_event_get_target</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+
+<span class="w">           </span><span class="cm">/* check event code */</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">event_code</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">LV_EVENT_RELEASED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj1</span><span class="p">)</span><span class="w"> </span><span class="c1">// object from array</span>
+<span class="w">            </span><span class="n">ui_state_modify</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">LV_STATE_CHECKED</span><span class="p">,</span><span class="w"> </span><span class="n">UI_MODIFY_STATE_ADD</span><span class="p">);</span><span class="w"> </span><span class="c1">// for example add checked state</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">objects</span><span class="p">.</span><span class="n">obj2</span><span class="p">)</span>
+<span class="w">            </span><span class="cm">/* logic */</span>
+
+<span class="w">        </span><span class="cm">/* etc */</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="recommendations">
+<h3>Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>It is recommended to repaint/replace objects only using states, and hide only using a flag</p></li>
+<li><p>Also define style changes only by states, which also need to be configured only in eez studio (with very rare exceptions)</p></li>
+<li><p>When creating an interface, it is recommended to limit yourself to the capabilities of EEZ Studio, but occasionally there are situations when it is necessary to use LVGL functions that are not yet integrated, to do this, simply write them in the ui_init_events function</p></li>
+</ul>
+<p>Example of object styling bypassing EEZ Studio:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*******************************************************************************</span>
+<span class="cm">* Function Name  : ui_init_events</span>
+<span class="cm">* Description    : init all events &amp; anims</span>
+<span class="cm">* Input          : -</span>
+<span class="cm">* Output         : -</span>
+<span class="cm">* Return         : -</span>
+<span class="cm">*******************************************************************************/</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">ui_init_events</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/* init your evets */</span>
+<span class="w">        </span><span class="cm">/* ... */</span>
+
+<span class="w">    </span><span class="cm">/* add your styling after init events */</span>
+<span class="w">    </span><span class="n">lv_obj_set_style_bg_opa</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">LV_PART_MAIN</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">LV_STATE_DEFAULT</span><span class="p">);</span><span class="w"> </span><span class="c1">// for example, set opacity to 0 bypassing eez</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="start.html" class="btn btn-neutral float-left" title="Getting Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, PAA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

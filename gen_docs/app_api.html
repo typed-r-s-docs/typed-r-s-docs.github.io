@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APP API &mdash; TypeD(R|S) Documentation 05.11.2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=05167a12"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="UI API" href="ui_api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #4a4a4a" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TypeD(R|S) Documentation
+              <img src="_static/protok_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Launcher</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#download-launcher">Download Launcher</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html#updater">Updater</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#installation">Installation:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html#working">Working:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Getting Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html#download">Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#add-flm-to-keil">Add FLM to Keil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#about-keil-project">About Keil Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#simulator">Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#nxp-jtag-firmware-update">NXP JTAG firmware update</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#assets">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#update-firmware-from-boot">Update firmware from boot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guides.html#working-with-ui">Working with UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="guides.html#screen-presets">Screen presets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guides.html#events">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guides.html#recommendations">Recommendations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ui_api.html">UI API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv419ui_anim_user_data_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv415target_camera_t"><code class="docutils literal notranslate"><span class="pre">target_camera_t</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N15target_camera_t8camera_1E"><code class="docutils literal notranslate"><span class="pre">target_camera_t::camera_1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N15target_camera_t8camera_2E"><code class="docutils literal notranslate"><span class="pre">target_camera_t::camera_2</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N15target_camera_t8camera_3E"><code class="docutils literal notranslate"><span class="pre">target_camera_t::camera_3</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N15target_camera_t8camera_4E"><code class="docutils literal notranslate"><span class="pre">target_camera_t::camera_4</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv421ui_preset_screen_loadP13Screen_Presetbb"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_load()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv423ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_create()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv420ui_preset_get_activev"><code class="docutils literal notranslate"><span class="pre">ui_preset_get_active()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv423ui_preset_screen_deleteP13Screen_Preset"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_delete()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_sysmenu_enterv"><code class="docutils literal notranslate"><span class="pre">ui_sysmenu_enter()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_sysmenu_leavev"><code class="docutils literal notranslate"><span class="pre">ui_sysmenu_leave()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_arc_set_valueP8lv_obj_ti"><code class="docutils literal notranslate"><span class="pre">ui_arc_set_value()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv440ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t"><code class="docutils literal notranslate"><span class="pre">ui_set_text_from_with_division_value_arc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv426ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_text_from_value_arc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv419ui_slider_incrementP8lv_obj_tib"><code class="docutils literal notranslate"><span class="pre">ui_slider_increment()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv429ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_text_from_value_slider()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_slider_set_propertyP8lv_obj_tbi"><code class="docutils literal notranslate"><span class="pre">ui_slider_set_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv426ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_text_from_bar_value()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv419ui_bar_set_propertyP8lv_obj_tbi"><code class="docutils literal notranslate"><span class="pre">ui_bar_set_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv425ui_set_text_from_variableP8lv_obj_tiPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_text_from_variable()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv420ui_text_set_propertyP8lv_obj_tiPKc"><code class="docutils literal notranslate"><span class="pre">ui_text_set_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv414ui_opacity_setP8lv_obj_ti"><code class="docutils literal notranslate"><span class="pre">ui_opacity_set()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv421ui_set_value_dropdownP8lv_obj_ti"><code class="docutils literal notranslate"><span class="pre">ui_set_value_dropdown()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv421ui_image_set_propertyP8lv_obj_tbP7uint8_t"><code class="docutils literal notranslate"><span class="pre">ui_image_set_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_roller_set_propertyP8lv_obj_tbi"><code class="docutils literal notranslate"><span class="pre">ui_roller_set_property()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t"><code class="docutils literal notranslate"><span class="pre">ui_keyboard_set_target()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv414ui_flag_modifyP8lv_obj_t7int32_ti"><code class="docutils literal notranslate"><span class="pre">ui_flag_modify()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv415ui_state_modifyP8lv_obj_t7int32_ti"><code class="docutils literal notranslate"><span class="pre">ui_state_modify()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv431ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_checked_state_set_text_value()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv431ui_anim_callback_free_user_dataP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_free_user_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_anim_callback_set_xP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_x()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_anim_callback_set_yP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_y()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv426ui_anim_callback_set_widthP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_width()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv427ui_anim_callback_set_heightP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_height()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv428ui_anim_callback_set_opacityP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_opacity()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv431ui_anim_callback_set_image_zoomP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_image_zoom()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv432ui_anim_callback_set_image_angleP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_image_angle()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv432ui_anim_callback_set_image_frameP9lv_anim_t7int32_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_set_image_frame()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_anim_callback_get_xP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_x()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv422ui_anim_callback_get_yP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_y()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv426ui_anim_callback_get_widthP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_width()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv427ui_anim_callback_get_heightP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_height()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv428ui_anim_callback_get_opacityP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_opacity()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv431ui_anim_callback_get_image_zoomP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_image_zoom()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv432ui_anim_callback_get_image_angleP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_image_angle()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv432ui_anim_callback_get_image_frameP9lv_anim_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_callback_get_image_frame()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv415ui_spinbox_stepP8lv_obj_ti"><code class="docutils literal notranslate"><span class="pre">ui_spinbox_step()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_camera_enableb"><code class="docutils literal notranslate"><span class="pre">ui_camera_enable()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_camera_select7uint8_t"><code class="docutils literal notranslate"><span class="pre">ui_camera_select()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv425ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb"><code class="docutils literal notranslate"><span class="pre">ui_set_time_text_from_rtc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv425ui_set_date_text_from_rtcP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_date_text_from_rtc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv429ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_timedate_text_from_rtc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv412ui_set_imageP8lv_obj_tP7uint8_t"><code class="docutils literal notranslate"><span class="pre">ui_set_image()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv416ui_get_speed_gpsv"><code class="docutils literal notranslate"><span class="pre">ui_get_speed_gps()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv431ui_set_arc_value_from_speed_gpsP8lv_obj_t"><code class="docutils literal notranslate"><span class="pre">ui_set_arc_value_from_speed_gps()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv411ui_set_textP8lv_obj_tPKcPKcPKc"><code class="docutils literal notranslate"><span class="pre">ui_set_text()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv48disp_ico"><code class="docutils literal notranslate"><span class="pre">disp_ico</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv48disp_arc"><code class="docutils literal notranslate"><span class="pre">disp_arc</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv415disp_background"><code class="docutils literal notranslate"><span class="pre">disp_background</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv413Screen_Preset"><code class="docutils literal notranslate"><span class="pre">Screen_Preset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N13Screen_Preset17screen_backgroundE"><code class="docutils literal notranslate"><span class="pre">Screen_Preset::screen_background</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ui_api.html#_CPPv4N13Screen_Preset10screen_icoE"><code class="docutils literal notranslate"><span class="pre">Screen_Preset::screen_ico</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv4N19ui_anim_user_data_t6targetE"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t::target</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv4N19ui_anim_user_data_t6imgsetE"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t::imgset</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv4N19ui_anim_user_data_t11imgset_sizeE"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t::imgset_size</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ui_api.html#_CPPv4N19ui_anim_user_data_t3valE"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t::val</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">APP API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv423app_ota_download_updatev"><code class="docutils literal notranslate"><span class="pre">app_ota_download_update()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv421app_ota_check_updatesv"><code class="docutils literal notranslate"><span class="pre">app_ota_check_updates()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv416app_ota_get_sizev"><code class="docutils literal notranslate"><span class="pre">app_ota_get_size()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv419app_ota_get_versionv"><code class="docutils literal notranslate"><span class="pre">app_ota_get_version()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv414app_fram_write8uint32_tP7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_fram_write()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv413app_fram_read8uint32_tP7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_fram_read()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv418app_fram_wait_initv"><code class="docutils literal notranslate"><span class="pre">app_fram_wait_init()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv418app_fram_write_vinAL20E_c"><code class="docutils literal notranslate"><span class="pre">app_fram_write_vin()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv417app_fram_read_vinAL20E_c"><code class="docutils literal notranslate"><span class="pre">app_fram_read_vin()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv429app_rtc_set_timedate_from_gpsv"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_timedate_from_gps()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv420app_rtc_set_timedateiiiiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_timedate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv416app_rtc_set_timeiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_time()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv416app_rtc_set_dateiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_date()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv419app_audio_play_beep7uint8_ti6int8_t"><code class="docutils literal notranslate"><span class="pre">app_audio_play_beep()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv420app_audio_set_volume7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_audio_set_volume()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv417app_pwm_set_valuei"><code class="docutils literal notranslate"><span class="pre">app_pwm_set_value()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv418app_enable_displayb"><code class="docutils literal notranslate"><span class="pre">app_enable_display()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv415app_resume_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_resume_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv414app_pause_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_pause_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv415app_create_task12TaskHandle_tPvPKc8uint16_t"><code class="docutils literal notranslate"><span class="pre">app_create_task()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv415app_delete_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_delete_task()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #4a4a4a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TypeD(R|S) Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">APP API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/app_api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="app-api">
+<h1>APP API<a class="headerlink" href="#app-api" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.app_task_free">
+<span class="target" id="user__api_8h_1a26c8974920df83c45f2b238a3322610e"></span><span class="sig-name descname"><span class="n"><span class="pre">app_task_free</span></span></span><a class="headerlink" href="#c.app_task_free" title="Link to this definition"></a><br /></dt>
+<dd><p>set task free use: app_task_free(); </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.app_task_delay">
+<span class="target" id="user__api_8h_1ac3deefc95bf57570bd4824028a858666"></span><span class="sig-name descname"><span class="n"><span class="pre">app_task_delay</span></span></span><a class="headerlink" href="#c.app_task_delay" title="Link to this definition"></a><br /></dt>
+<dd><p>set task free use: app_task_delay(ms to delay); </p>
+</dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.task_t">
+<span class="target" id="user__api_8h_1af4e78a5aaf6b45938ea1d203bbc5ad12"></span><span class="sig-name descname"><span class="n"><span class="pre">task_t</span></span></span><a class="headerlink" href="#c.task_t" title="Link to this definition"></a><br /></dt>
+<dd><p>task name </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv423app_ota_download_updatev">
+<span id="_CPPv323app_ota_download_updatev"></span><span id="_CPPv223app_ota_download_updatev"></span><span id="app_ota_download_update__void"></span><span class="target" id="user__api_8h_1a4113a3ed1613ecf7e73fc251fca1edfb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_ota_download_update</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423app_ota_download_updatev" title="Link to this definition"></a><br /></dt>
+<dd><p>download update from the server </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv421app_ota_check_updatesv">
+<span id="_CPPv321app_ota_check_updatesv"></span><span id="_CPPv221app_ota_check_updatesv"></span><span id="app_ota_check_updates__void"></span><span class="target" id="user__api_8h_1a994516fab681b549e93f91ab273860bc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_ota_check_updates</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421app_ota_check_updatesv" title="Link to this definition"></a><br /></dt>
+<dd><p>checking for updates on the server </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>preset</strong> – preset of screen </p></li>
+<li><p><strong>update_bg</strong> – redraw background? [true/false] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv416app_ota_get_sizev">
+<span id="_CPPv316app_ota_get_sizev"></span><span id="_CPPv216app_ota_get_sizev"></span><span id="app_ota_get_size__void"></span><span class="target" id="user__api_8h_1a7f8b6e4efe1c03513687d317410e4969"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_ota_get_size</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416app_ota_get_sizev" title="Link to this definition"></a><br /></dt>
+<dd><p>return firmware size from ota server </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>size of firmware </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419app_ota_get_versionv">
+<span id="_CPPv319app_ota_get_versionv"></span><span id="_CPPv219app_ota_get_versionv"></span><span id="app_ota_get_version__void"></span><span class="target" id="user__api_8h_1ac94021a89643cf21b4593ea2c7a1d95e"></span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">app_ota_get_version</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419app_ota_get_versionv" title="Link to this definition"></a><br /></dt>
+<dd><p>return firmware version from ota server </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414app_fram_write8uint32_tP7uint8_t7uint8_t">
+<span id="_CPPv314app_fram_write8uint32_tP7uint8_t7uint8_t"></span><span id="_CPPv214app_fram_write8uint32_tP7uint8_t7uint8_t"></span><span id="app_fram_write__uint32_t.uint8_tP.uint8_t"></span><span class="target" id="user__api_8h_1a70db0c2cf92fc7d6c54773033dee075c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_fram_write</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">address</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rxBuff</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rxBuffSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414app_fram_write8uint32_tP7uint8_t7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd><p>write block in fram memory from txBuff </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – address in fram </p></li>
+<li><p><strong>txBuff</strong> – buffer with data to write in fram </p></li>
+<li><p><strong>txBuffSize</strong> – size of data buffer </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>status_t of write </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413app_fram_read8uint32_tP7uint8_t7uint8_t">
+<span id="_CPPv313app_fram_read8uint32_tP7uint8_t7uint8_t"></span><span id="_CPPv213app_fram_read8uint32_tP7uint8_t7uint8_t"></span><span id="app_fram_read__uint32_t.uint8_tP.uint8_t"></span><span class="target" id="user__api_8h_1a4ac3e1bede31e4ab67228a434d60368c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_fram_read</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">address</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txBuff</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">txBuffSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413app_fram_read8uint32_tP7uint8_t7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd><p>read block in fram memory to rxBuff </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> – address in fram </p></li>
+<li><p><strong>rxBuff</strong> – buffer to read data from fram </p></li>
+<li><p><strong>rxBuffSize</strong> – size of data buffer </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>status_t of read </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418app_fram_wait_initv">
+<span id="_CPPv318app_fram_wait_initv"></span><span id="_CPPv218app_fram_wait_initv"></span><span id="app_fram_wait_init__void"></span><span class="target" id="user__api_8h_1a44aec63712b5fb83bccd01303dce6db4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_fram_wait_init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418app_fram_wait_initv" title="Link to this definition"></a><br /></dt>
+<dd><p>while task delay in wait a fram start [only for threads!] </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>size of firmware </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418app_fram_write_vinAL20E_c">
+<span id="_CPPv318app_fram_write_vinAL20E_c"></span><span id="_CPPv218app_fram_write_vinA20_c"></span><span id="app_fram_write_vin__cA"></span><span class="target" id="user__api_8h_1aff523d1f336b9532e3f8a66737154bfa"></span><span class="n"><span class="pre">status_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_fram_write_vin</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vin</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">20</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418app_fram_write_vinAL20E_c" title="Link to this definition"></a><br /></dt>
+<dd><p>write vin to fram </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vin</strong> – VIN number of car </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>status_t of write VIN </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417app_fram_read_vinAL20E_c">
+<span id="_CPPv317app_fram_read_vinAL20E_c"></span><span id="_CPPv217app_fram_read_vinA20_c"></span><span id="app_fram_read_vin__cA"></span><span class="target" id="user__api_8h_1a7cf046416ad65c76824db159e44612bb"></span><span class="n"><span class="pre">status_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_fram_read_vin</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vin</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">20</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417app_fram_read_vinAL20E_c" title="Link to this definition"></a><br /></dt>
+<dd><p>write vin to fram </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vin</strong> – buffer in which the VIN number will be written </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>status_t of read VIN </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv429app_rtc_set_timedate_from_gpsv">
+<span id="_CPPv329app_rtc_set_timedate_from_gpsv"></span><span id="_CPPv229app_rtc_set_timedate_from_gpsv"></span><span id="app_rtc_set_timedate_from_gps__void"></span><span class="target" id="user__api_8h_1a51583dd08a92551cd04ea2b20a5e2646"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_rtc_set_timedate_from_gps</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429app_rtc_set_timedate_from_gpsv" title="Link to this definition"></a><br /></dt>
+<dd><p>set system timedate from gps module </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420app_rtc_set_timedateiiiiii">
+<span id="_CPPv320app_rtc_set_timedateiiiiii"></span><span id="_CPPv220app_rtc_set_timedateiiiiii"></span><span id="app_rtc_set_timedate__i.i.i.i.i.i"></span><span class="target" id="user__api_8h_1a10dec72fbbdabb652a631becca796f5c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_rtc_set_timedate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">month</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">day</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">year</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hour</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minute</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">second</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420app_rtc_set_timedateiiiiii" title="Link to this definition"></a><br /></dt>
+<dd><p>set system timedate </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – month to set </p></li>
+<li><p><strong>day</strong> – day to set </p></li>
+<li><p><strong>year</strong> – year to set </p></li>
+<li><p><strong>hour</strong> – hour to set </p></li>
+<li><p><strong>minute</strong> – minute to set </p></li>
+<li><p><strong>second</strong> – second to set </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv416app_rtc_set_timeiii">
+<span id="_CPPv316app_rtc_set_timeiii"></span><span id="_CPPv216app_rtc_set_timeiii"></span><span id="app_rtc_set_time__i.i.i"></span><span class="target" id="user__api_8h_1ad349b810b2e1b196add2d36c80a097ed"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_rtc_set_time</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hour</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minute</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">second</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416app_rtc_set_timeiii" title="Link to this definition"></a><br /></dt>
+<dd><p>set system time only </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hour</strong> – hour to set </p></li>
+<li><p><strong>minute</strong> – minute to set </p></li>
+<li><p><strong>second</strong> – second to set </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv416app_rtc_set_dateiii">
+<span id="_CPPv316app_rtc_set_dateiii"></span><span id="_CPPv216app_rtc_set_dateiii"></span><span id="app_rtc_set_date__i.i.i"></span><span class="target" id="user__api_8h_1ab003a3dc108dbec003b1fb0fb5120d27"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_rtc_set_date</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">month</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">day</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">year</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416app_rtc_set_dateiii" title="Link to this definition"></a><br /></dt>
+<dd><p>set system date only </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>month</strong> – month to set </p></li>
+<li><p><strong>day</strong> – day to set </p></li>
+<li><p><strong>year</strong> – year to set </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419app_audio_play_beep7uint8_ti6int8_t">
+<span id="_CPPv319app_audio_play_beep7uint8_ti6int8_t"></span><span id="_CPPv219app_audio_play_beep7uint8_ti6int8_t"></span><span id="app_audio_play_beep__uint8_t.i.int8_t"></span><span class="target" id="user__api_8h_1ae845b469e774c8a94cf96b54be59963e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_audio_play_beep</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hz</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ms</span></span>, <span class="n"><span class="pre">int8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">db</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419app_audio_play_beep7uint8_ti6int8_t" title="Link to this definition"></a><br /></dt>
+<dd><p>play beep sound </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hz</strong> – hz of beep </p></li>
+<li><p><strong>ms</strong> – playing time </p></li>
+<li><p><strong>db</strong> – volume lvl </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv420app_audio_set_volume7uint8_t">
+<span id="_CPPv320app_audio_set_volume7uint8_t"></span><span id="_CPPv220app_audio_set_volume7uint8_t"></span><span id="app_audio_set_volume__uint8_t"></span><span class="target" id="user__api_8h_1a4be80a7f0477fc14488a98485ae153b7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_audio_set_volume</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">volume</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420app_audio_set_volume7uint8_t" title="Link to this definition"></a><br /></dt>
+<dd><p>0 - 100 procent </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>volume</strong> – volume procent </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv417app_pwm_set_valuei">
+<span id="_CPPv317app_pwm_set_valuei"></span><span id="_CPPv217app_pwm_set_valuei"></span><span id="app_pwm_set_value__i"></span><span class="target" id="user__api_8h_1a1f377f1b163a31c2efe3f522ace7e535"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_pwm_set_value</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417app_pwm_set_valuei" title="Link to this definition"></a><br /></dt>
+<dd><p>set brigdness value </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – brightness lvl [0 … 100] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv418app_enable_displayb">
+<span id="_CPPv318app_enable_displayb"></span><span id="_CPPv218app_enable_displayb"></span><span id="app_enable_display__b"></span><span class="target" id="user__api_8h_1a0380bef8d48038daf0a716c57eecc810"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_enable_display</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">enable</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv418app_enable_displayb" title="Link to this definition"></a><br /></dt>
+<dd><p>display enable/disable </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>enable</strong> – enable display? [true/false] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415app_resume_task12TaskHandle_t">
+<span id="_CPPv315app_resume_task12TaskHandle_t"></span><span id="_CPPv215app_resume_task12TaskHandle_t"></span><span id="app_resume_task__TaskHandle_t"></span><span class="target" id="user__api_8h_1a1226f19508c945c0ac341aef6ab12674"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_resume_task</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">TaskHandle_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415app_resume_task12TaskHandle_t" title="Link to this definition"></a><br /></dt>
+<dd><p>resume task </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> – task name </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414app_pause_task12TaskHandle_t">
+<span id="_CPPv314app_pause_task12TaskHandle_t"></span><span id="_CPPv214app_pause_task12TaskHandle_t"></span><span id="app_pause_task__TaskHandle_t"></span><span class="target" id="user__api_8h_1a9e35af16059478ed5c9cb1067786a001"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_pause_task</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">TaskHandle_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414app_pause_task12TaskHandle_t" title="Link to this definition"></a><br /></dt>
+<dd><p>set pause task </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> – task name </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415app_create_task12TaskHandle_tPvPKc8uint16_t">
+<span id="_CPPv315app_create_task12TaskHandle_tPvPKc8uint16_t"></span><span id="_CPPv215app_create_task12TaskHandle_tPvPKc8uint16_t"></span><span id="app_create_task__TaskHandle_t.voidP.cCP.uint16_t"></span><span class="target" id="user__api_8h_1aca6a8cd81c4c05ae3180e20bb5e3d0ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_create_task</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">TaskHandle_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">task_fuction</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">task_name</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stacksize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415app_create_task12TaskHandle_tPvPKc8uint16_t" title="Link to this definition"></a><br /></dt>
+<dd><p>create new task </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>task</strong> – task name </p></li>
+<li><p><strong>task_fuction</strong> – thread work function </p></li>
+<li><p><strong>task_name</strong> – name of task in debug </p></li>
+<li><p><strong>stacksize</strong> – stack size of thread [512 … 1024] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415app_delete_task12TaskHandle_t">
+<span id="_CPPv315app_delete_task12TaskHandle_t"></span><span id="_CPPv215app_delete_task12TaskHandle_t"></span><span id="app_delete_task__TaskHandle_t"></span><span class="target" id="user__api_8h_1a760a467a4989b9159ddb5e919ca48ff8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">app_delete_task</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">TaskHandle_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">task</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415app_delete_task12TaskHandle_t" title="Link to this definition"></a><br /></dt>
+<dd><p>destroy task </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> – task name </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ui_api.html" class="btn btn-neutral float-left" title="UI API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, PAA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
