@@ -1,0 +1,224 @@
+Guides
+======================================================
+
+Assets
+-----------------
+.. warning::  make sure all images are in `EEZ->assets` folder
+
+Compile the project with the `incbin_assets` utility enabled in DFP
+
+.. image:: images/keil_update_assets.png
+   :alt: Error load image
+   :width: 400px
+   :align: center
+
+.. note::  After flashing with assets, you can turn off the utility for faster flashing
+
+
+Update firmware from boot
+-----------------
+.. warning::  The panel firmware should be carried out only using the updater utility (except for software developers)
+
+1. Run the updater
+2. Connect the panel via usb or ethernet
+
+.. warning::  If you use USB, you need to install the drivers available for download on the page with the updater (right click on fsl_ucwxp and install)
+
+.. warning::  If you are using Ethernet, you need to configure the adapter as follows                                     IPv4: 192.168.111.12 | Mask: 255.255.255.0 | DNS 8.8.8.8 and 8.8.4.4 
+
+.. note:: If the panel is connected, you will see its name, the app version, and the DFPs currently loaded.
+
+3. After selecting the firmware file, the firmware button is unlocked via the interface through which the board is connected
+
+.. note:: More details about working with the updater can be found on its  `page <application.rst#updater>`_
+
+Working with UI
+-----------------
+
+Screen presets
+**************
+Presets are variable structures with 2 LVGL screens, this is necessary to ensure the best performance of the panel, for convenience it is recommended to name the screens in eez studio as follows:
+
+`screen_ico_preset_example`
+
+`screen_background_preset_example`
+
+Presets are initialized in the function `ui_init` (app_ui.c) and the loading screen is selected in it, this function needs to be written from eez studio
+ 
+Example of filling ui_init:
+
+.. code-block:: c
+
+  /* Variables */
+  Screen_Preset preset_example; 
+
+  /*******************************************************************************
+  * Function Name  : ui_init
+  * Description    : Initializes ... (Priviliged Mode)
+  * Input          : -
+  * Output         : -
+  * Return         : -
+  *******************************************************************************/
+  void ui_init() {
+  
+      /*  create all screens & objects   */
+      create_screens();
+  
+      /*  create events   */
+      ui_init_events();
+  
+      /* creating presets */
+      ui_preset_screen_create(&preset_example, objects.screen_background_preset_example, objects.screen_ico_preset_example);
+  
+      /* starting screen */
+      ui_preset_screen_load(&preset_example, true, true);
+  
+  }
+   
+
+It is also necessary to call the screen creation functions in the correct order, this is done at the very bottom of the app_screens.c module, the create_screens function, this is done in the eez studio code editor (as everything that eez generates)
+
+Example of filling create_screens:
+
+.. code-block:: c
+  
+ /*******************************************************************************
+ * Function Name  : create_screens
+ * Description    : init all screens
+ * Input          : -
+ * Output         : -
+ * Return         : -
+ *******************************************************************************/
+ void create_screens(void) {
+ 
+     /* init backgrounds */
+     lv_disp_set_default(disp_background);
+     create_screen_screen_background_preset_example();
+ 
+     /* init ico */
+     lv_disp_set_default(disp_ico);
+     create_screen_ico_preset_example();
+ 
+ }
+
+
+
+Events
+**************
+To work with events, go to the app_events.c module
+ 
+It has the ui_init_events function, it defines/initializes all events for objects on the display (LVGL objects)
+
+Event initialize example:
+
+`lv_obj_add_event_cb(youre_object, event_handler_youre_object, LV_EVENT_TYPE, NULL);`
+
+* youre_object -> any lvgl object from your project
+
+* event_handler_youre_object -> a void type function that accepts an event type
+
+*  LV_EVENT_TYPE -> event receiving by the object (most often LV_EVENT_ALL is used)
+
+* NULL -> user data in lvgl (permanently = NULL)
+
+in case you need to initialize one event handler for multiple objects, it is recommended to create an array in which you need to write all the objects and add the event in a for loop
+
+.. code-block:: c
+  
+ /* Private define ------------------------------------------------------------*/
+ #define LIST_OBJ_NUM 10 // number of array objects
+ 
+ /* Private variables ---------------------------------------------------------*/
+ 
+ lv_obj_t *list_ico[LIST_OBJ_NUM]; // objects array
+ /* protorypes functions */
+ static void event_obj_enable(lv_event *e);
+ 
+ /*******************************************************************************
+ * Function Name  : ui_init_list_ico
+ * Description    : ...
+ *******************************************************************************/
+ static void ui_init_list_ico(void) {
+ 
+     list_ico[0] = objects.obj1;
+     list_ico[1] = objects.obj2;
+     list_ico[2] = objects.obj3;
+     list_ico[3] = objects.obj4;
+     list_ico[4] = objects.obj5;
+     list_ico[5] = objects.obj6;
+     list_ico[6] = objects.obj7;
+     list_ico[7] = objects.obj8;
+     list_ico[8] = objects.obj9;
+     list_ico[9] = objects.obj10;
+ }
+ 
+ /*******************************************************************************
+ * Function Name  : ui_init_events
+ * Description    : init all events & anims
+ *******************************************************************************/
+ int ui_init_events(void) {
+ 
+     /* init list ... */ 
+     ui_init_list_ico();
+ 
+ 
+ 
+     /* events for all buttons for freq */
+     for (int obj_num = 0; obj_num < LIST_OBJ_NUM; obj_num++) {
+         lv_obj_add_event_cb(list_freq[obj_num], event_obj_enable, LV_EVENT_RELEASED, NULL);
+     }
+     return 0;
+ 
+ /*******************************************************************************
+ * Function Name  : event_button_released
+ * Description    : ...
+ *******************************************************************************/
+ static void event_obj_enable(lv_event_t *e) {
+
+     /* get event type */
+     lv_event_code_t event_code = lv_event_get_code(e);
+
+     /* get object target */
+     lv_obj_t * target = lv_event_get_target(e);
+
+            /* check event code */
+     if (event_code == LV_EVENT_RELEASED) {
+         if (target == objects.obj1) // object from array
+             ui_state_modify(target, LV_STATE_CHECKED, UI_MODIFY_STATE_ADD); // for example add checked state
+         else if (target == objects.obj2) 
+             /* logic */
+ 
+         /* etc */
+     }
+ }
+
+
+Recommendations
+**************
+* It is recommended to repaint/replace objects only using states, and hide only using a flag
+
+* Also define style changes only by states, which also need to be configured only in eez studio (with very rare exceptions)
+
+* When creating an interface, it is recommended to limit yourself to the capabilities of EEZ Studio, but occasionally there are situations when it is necessary to use LVGL functions that are not yet integrated, to do this, simply write them in the ui_init_events function
+
+Example of object styling bypassing EEZ Studio:
+
+.. code-block:: c
+  
+ /*******************************************************************************
+ * Function Name  : ui_init_events
+ * Description    : init all events & anims
+ * Input          : -
+ * Output         : -
+ * Return         : -
+ *******************************************************************************/
+ int ui_init_events(void) {
+ 
+     /* init your evets */
+         /* ... */
+ 
+     /* add your styling after init events */
+     lv_obj_set_style_bg_opa(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT); // for example, set opacity to 0 bypassing eez 
+ 
+     return (0);
+ }
