@@ -1,0 +1,66 @@
+Launcher
+========
+
+- The launcher requires `Python <https://www.python.org/downloads/>`_ version 3.12 or higher and a `Git <https://git-scm.com/downloads>`_ client to be installed.
+
+- In addition to template projects, you can install various demo versions in the launcher. Their number will constantly increase as we aim for long-term support of the launcher and its expanding functionality.
+
+- Please download all projects into one folder. The folder should be named after the working project, as it will contain a ``projects`` folder with projects for Keil and EEZ Studio.
+
+Download Launcher
+-----------------
+
+.. image:: https://img.shields.io/badge/Download-Launcher-blue
+   :target: https://drive.google.com/uc?id=1LU95CkoEMMt2TZmObLmNdWCo1q96-59f&export=download
+   :alt: Download Launcher
+
+Updater
+=======
+
+Updater allows you to reflash the panel, download the firmware from the Git repository, and see what it sends to the terminal.
+
+Installation:
+-------------
+
+- The updater requires `Python <https://www.python.org/downloads/>`_ version 3.12 or higher and a `Git <https://git-scm.com/downloads>`_ client to be installed.
+
+- Download Updater client and drivers:
+
+  .. image:: https://img.shields.io/badge/Download-Updater-blue
+     :target: Vega RS Updater.exe
+     :alt: Download Updater
+
+  .. image:: https://img.shields.io/badge/Download-diskDriver-blue
+     :target: cdc.cat
+     :alt: Download Disk Driver
+ 
+  .. image:: https://img.shields.io/badge/Download-usbDriver-blue
+     :target: fsl_ucwxp.inf
+     :alt: Download USB Driver
+
+- Before installing/launching the application, install the driver that comes with the standalone version installer (``fsl_ucwxp``).
+- After that, launch the panel and connect it to the computer via USB. If the driver is installed correctly, you will see the panel name, application version, and DFP version.
+- If for some reason the panel is not recognized, try reinstalling the driver.
+
+Working:
+--------
+
+Flashing the panel if you already have the application file
+- Press the ``Select Firmware file`` button.
+- If the application file is correct, the button for uploading the file to the panel will be unlocked.
+- If the file upload to the panel was successful, the flashing start button will be unlocked.
+
+Flashing the panel if you do not have the application file
+- Press the ``Get Firmware`` button.
+- In the window that opens, you will need to specify a link to the repository with the firmware files (for example, https://github.com/example/example). If you are not a developer, request this link from the company selling you the panel.
+- After entering the link and pressing the Enter key, you will see a list of available firmware. Select the one you need and close the installation window.
+- All subsequent steps are identical to the method when you already have the firmware file.
+
+Creating firmware
+
+**Available only in the Evolved version, available only to developers as part of the SDK**
+
+- To create firmware, compile the Keil project, then click the ``Create firmware`` button. The firmware is generated in the ``output`` folder, located in the root of the updater.
+- To release firmware on Git, create a tag inside the repository that includes only the ``image.bin`` file (firmware file).
+- If the repository is private, grant access to the repository to the account of the person flashing the panel. Alternatively, create an account, give it access to the repository, and share the account with those who need it.
+- If the repository is open, no further action is required.
