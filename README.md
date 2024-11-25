@@ -1,1 +1,0 @@
-# typed-r-s-docs.github.io
