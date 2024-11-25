@@ -9,18 +9,13 @@
   <title>UI API &mdash; TypeD(R|S) Documentation 05.11.2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/all/css/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/all/css/theme.css" />
 
   
-    <link rel="canonical" href="https://typed-r-s-docs.github.io/ui_api.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=05167a12"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="_static/all/js/jquery.js"></script>
-      <script src="_static/all/js/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -49,34 +44,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="applications.html">Launcher</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#download-launcher">Download Launcher</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="applications.html#updater">Updater</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#installation">Installation:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="applications.html#working">Working:</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="start.html">Getting Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="start.html#download">Download</a></li>
-<li class="toctree-l2"><a class="reference internal" href="start.html#add-flm-to-keil">Add FLM to Keil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="start.html#about-keil-project">About Keil Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="start.html#simulator">Simulator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="start.html#nxp-jtag-firmware-update">NXP JTAG firmware update</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="guides.html#assets">Assets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides.html#update-firmware-from-boot">Update firmware from boot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides.html#working-with-ui">Working with UI</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="guides.html#screen-presets">Screen presets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="guides.html#events">Events</a></li>
-<li class="toctree-l3"><a class="reference internal" href="guides.html#recommendations">Recommendations</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Launcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html#updater">Updater</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Getting Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">UI API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv419ui_anim_user_data_t"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv415target_camera_t"><code class="docutils literal notranslate"><span class="pre">target_camera_t</span></code></a><ul>
@@ -151,30 +122,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv4N19ui_anim_user_data_t3valE"><code class="docutils literal notranslate"><span class="pre">ui_anim_user_data_t::val</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="app_api.html">APP API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv423app_ota_download_updatev"><code class="docutils literal notranslate"><span class="pre">app_ota_download_update()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv421app_ota_check_updatesv"><code class="docutils literal notranslate"><span class="pre">app_ota_check_updates()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv416app_ota_get_sizev"><code class="docutils literal notranslate"><span class="pre">app_ota_get_size()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv419app_ota_get_versionv"><code class="docutils literal notranslate"><span class="pre">app_ota_get_version()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv414app_fram_write8uint32_tP7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_fram_write()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv413app_fram_read8uint32_tP7uint8_t7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_fram_read()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv418app_fram_wait_initv"><code class="docutils literal notranslate"><span class="pre">app_fram_wait_init()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv418app_fram_write_vinAL20E_c"><code class="docutils literal notranslate"><span class="pre">app_fram_write_vin()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv417app_fram_read_vinAL20E_c"><code class="docutils literal notranslate"><span class="pre">app_fram_read_vin()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv429app_rtc_set_timedate_from_gpsv"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_timedate_from_gps()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv420app_rtc_set_timedateiiiiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_timedate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv416app_rtc_set_timeiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_time()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv416app_rtc_set_dateiii"><code class="docutils literal notranslate"><span class="pre">app_rtc_set_date()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv419app_audio_play_beep7uint8_ti6int8_t"><code class="docutils literal notranslate"><span class="pre">app_audio_play_beep()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv420app_audio_set_volume7uint8_t"><code class="docutils literal notranslate"><span class="pre">app_audio_set_volume()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv417app_pwm_set_valuei"><code class="docutils literal notranslate"><span class="pre">app_pwm_set_value()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv418app_enable_displayb"><code class="docutils literal notranslate"><span class="pre">app_enable_display()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv415app_resume_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_resume_task()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv414app_pause_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_pause_task()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv415app_create_task12TaskHandle_tPvPKc8uint16_t"><code class="docutils literal notranslate"><span class="pre">app_create_task()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="app_api.html#_CPPv415app_delete_task12TaskHandle_t"><code class="docutils literal notranslate"><span class="pre">app_delete_task()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="app_api.html">APP API</a></li>
 </ul>
 
         </div>
