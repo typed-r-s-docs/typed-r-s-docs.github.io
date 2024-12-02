@@ -57,9 +57,19 @@
 <li class="toctree-l3"><a class="reference internal" href="#_CPPv4N15target_camera_t8camera_4E"><code class="docutils literal notranslate"><span class="pre">target_camera_t::camera_4</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv48ui_error"><code class="docutils literal notranslate"><span class="pre">ui_error</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error10ui_successE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_success</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error21ui_preset_not_createdE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_preset_not_created</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error17ui_preset_warningE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_preset_warning</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error15ui_preset_errorE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_preset_error</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error14ui_engine_busyE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_engine_busy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error17ui_engine_warningE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_engine_warning</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv4N8ui_error15ui_engine_errorE"><code class="docutils literal notranslate"><span class="pre">ui_error::ui_engine_error</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv421ui_preset_screen_loadP13Screen_Presetbb"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_load()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv423ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_create()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#_CPPv420ui_preset_get_activev"><code class="docutils literal notranslate"><span class="pre">ui_preset_get_active()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv420ui_preset_get_active13Screen_Preset"><code class="docutils literal notranslate"><span class="pre">ui_preset_get_active()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv423ui_preset_screen_deleteP13Screen_Preset"><code class="docutils literal notranslate"><span class="pre">ui_preset_screen_delete()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv416ui_sysmenu_enterv"><code class="docutils literal notranslate"><span class="pre">ui_sysmenu_enter()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#_CPPv416ui_sysmenu_leavev"><code class="docutils literal notranslate"><span class="pre">ui_sysmenu_leave()</span></code></a></li>
@@ -271,6 +281,11 @@
 <span class="target" id="lvgl__addon_8h_1a3ece5fa5798bc94e1dd1e3fd28d60e53"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv415target_camera_t" title="target_camera_t"><span class="n"><span class="pre">target_camera_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">target_camera_t</span></span></span><br /></dt>
 <dd></dd></dl>
 
+<dl class="cpp type">
+<dt class="sig sig-object cpp">
+<span class="target" id="lvgl__addon_8h_1aa20fa9caa02124af61fb8e899a3e736f"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_error</span></span></span><br /></dt>
+<dd></dd></dl>
+
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
@@ -300,12 +315,53 @@
 
 </dd></dl>
 
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv48ui_error">
+<span id="_CPPv38ui_error"></span><span id="_CPPv28ui_error"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_error</span></span></span><a class="headerlink" href="#_CPPv48ui_error" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error10ui_successE">
+<span id="_CPPv3N8ui_error10ui_successE"></span><span id="_CPPv2N8ui_error10ui_successE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952a94e6d368f66015f57cf658bafd9c6fb9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_success</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error10ui_successE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error21ui_preset_not_createdE">
+<span id="_CPPv3N8ui_error21ui_preset_not_createdE"></span><span id="_CPPv2N8ui_error21ui_preset_not_createdE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952a016d05a31bb4a71f9f2a5e0b01bd23f7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_not_created</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error21ui_preset_not_createdE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error17ui_preset_warningE">
+<span id="_CPPv3N8ui_error17ui_preset_warningE"></span><span id="_CPPv2N8ui_error17ui_preset_warningE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952ae75d19f179e76c659894a39595e4e818"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_warning</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error17ui_preset_warningE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error15ui_preset_errorE">
+<span id="_CPPv3N8ui_error15ui_preset_errorE"></span><span id="_CPPv2N8ui_error15ui_preset_errorE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952aed1840113c3a05db6d05795d341bc3aa"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_error</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error15ui_preset_errorE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error14ui_engine_busyE">
+<span id="_CPPv3N8ui_error14ui_engine_busyE"></span><span id="_CPPv2N8ui_error14ui_engine_busyE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952a8826fb096018c13fc85dc38980c5fee7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_engine_busy</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error14ui_engine_busyE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error17ui_engine_warningE">
+<span id="_CPPv3N8ui_error17ui_engine_warningE"></span><span id="_CPPv2N8ui_error17ui_engine_warningE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952a204df34653920eda441db745809c0727"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_engine_warning</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error17ui_engine_warningE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8ui_error15ui_engine_errorE">
+<span id="_CPPv3N8ui_error15ui_engine_errorE"></span><span id="_CPPv2N8ui_error15ui_engine_errorE"></span><span class="target" id="lvgl__addon_8h_1a8edc395a09cd9f8d986002b3b77d6952ae5c415e92933c6e63e4ae6e8f6575fd8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_engine_error</span></span></span><a class="headerlink" href="#_CPPv4N8ui_error15ui_engine_errorE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv421ui_preset_screen_loadP13Screen_Presetbb">
-<span id="_CPPv321ui_preset_screen_loadP13Screen_Presetbb"></span><span id="_CPPv221ui_preset_screen_loadP13Screen_Presetbb"></span><span id="ui_preset_screen_load__Screen_PresetP.b.b"></span><span class="target" id="lvgl__addon_8h_1adad5f9f254abdfacc4ae3e010b56fc54"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_load</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">update_bg</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">update_ico</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_preset_screen_loadP13Screen_Presetbb" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv321ui_preset_screen_loadP13Screen_Presetbb"></span><span id="_CPPv221ui_preset_screen_loadP13Screen_Presetbb"></span><span id="ui_preset_screen_load__Screen_PresetP.b.b"></span><span class="target" id="lvgl__addon_8h_1a7a77137292a3e320c136621563e75133"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_load</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">update_bg</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">update_ico</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_preset_screen_loadP13Screen_Presetbb" title="Link to this definition"></a><br /></dt>
 <dd><p>load preset with screens </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -315,12 +371,15 @@
 <li><p><strong>update_bg</strong> – redraw icon layer? [true/false] </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv423ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t">
-<span id="_CPPv323ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"></span><span id="_CPPv223ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"></span><span id="ui_preset_screen_create__Screen_PresetP.lv_obj_tP.lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1aba7454d67c13d74fa1b5e37f04e30c97"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">screen_background</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">screen_ico</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv323ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"></span><span id="_CPPv223ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t"></span><span id="ui_preset_screen_create__Screen_PresetP.lv_obj_tP.lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1a93891363f79ced3ce51fe59a669443c0"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_create</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">screen_background</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">screen_ico</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423ui_preset_screen_createP13Screen_PresetP8lv_obj_tP8lv_obj_t" title="Link to this definition"></a><br /></dt>
 <dd><p>create new preset with screens </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -330,55 +389,82 @@
 <li><p><strong>screen_ico</strong> – icon screen for new preset </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv420ui_preset_get_activev">
-<span id="_CPPv320ui_preset_get_activev"></span><span id="_CPPv220ui_preset_get_activev"></span><span id="ui_preset_get_active__void"></span><span class="target" id="lvgl__addon_8h_1a5606b8c55ada21fb1eba0777a513d99f"></span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_get_active</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420ui_preset_get_activev" title="Link to this definition"></a><br /></dt>
-<dd><p>returned last loaded preset </p>
+<dt class="sig sig-object cpp" id="_CPPv420ui_preset_get_active13Screen_Preset">
+<span id="_CPPv320ui_preset_get_active13Screen_Preset"></span><span id="_CPPv220ui_preset_get_active13Screen_Preset"></span><span id="ui_preset_get_active__Screen_Preset"></span><span class="target" id="lvgl__addon_8h_1acc690bf3f658249a50b9394950144aa7"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_get_active</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">returned_preset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420ui_preset_get_active13Screen_Preset" title="Link to this definition"></a><br /></dt>
+<dd><p>get last loaded preset </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>returned_preset</strong> – empy preset to write last active screens </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv423ui_preset_screen_deleteP13Screen_Preset">
-<span id="_CPPv323ui_preset_screen_deleteP13Screen_Preset"></span><span id="_CPPv223ui_preset_screen_deleteP13Screen_Preset"></span><span id="ui_preset_screen_delete__Screen_PresetP"></span><span class="target" id="lvgl__addon_8h_1a6d10020527ee54bf639018dda67052d2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_delete</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423ui_preset_screen_deleteP13Screen_Preset" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv323ui_preset_screen_deleteP13Screen_Preset"></span><span id="_CPPv223ui_preset_screen_deleteP13Screen_Preset"></span><span id="ui_preset_screen_delete__Screen_PresetP"></span><span class="target" id="lvgl__addon_8h_1abcda6cddd05262320862df660c88b243"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_preset_screen_delete</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv413Screen_Preset" title="Screen_Preset"><span class="n"><span class="pre">Screen_Preset</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">preset</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423ui_preset_screen_deleteP13Screen_Preset" title="Link to this definition"></a><br /></dt>
 <dd><p>delete preset </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>preset</strong> – preset to delete </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv416ui_sysmenu_enterv">
-<span id="_CPPv316ui_sysmenu_enterv"></span><span id="_CPPv216ui_sysmenu_enterv"></span><span id="ui_sysmenu_enter__void"></span><span class="target" id="lvgl__addon_8h_1add8ddb38b69c1626e6f46799fbc160b3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_sysmenu_enter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_sysmenu_enterv" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv316ui_sysmenu_enterv"></span><span id="_CPPv216ui_sysmenu_enterv"></span><span id="ui_sysmenu_enter__void"></span><span class="target" id="lvgl__addon_8h_1a79c4851b1d09412fb5cd5e9843862af6"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_sysmenu_enter</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_sysmenu_enterv" title="Link to this definition"></a><br /></dt>
 <dd><p>enter to system menu (pre-loaded graphics) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ui_error variable </p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv416ui_sysmenu_leavev">
-<span id="_CPPv316ui_sysmenu_leavev"></span><span id="_CPPv216ui_sysmenu_leavev"></span><span id="ui_sysmenu_leave__void"></span><span class="target" id="lvgl__addon_8h_1a8250be9a0a9354263bc19bd88d966a03"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_sysmenu_leave</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_sysmenu_leavev" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv316ui_sysmenu_leavev"></span><span id="_CPPv216ui_sysmenu_leavev"></span><span id="ui_sysmenu_leave__void"></span><span class="target" id="lvgl__addon_8h_1a711cbdf05996dcda89dffc91a66c471a"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_sysmenu_leave</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_sysmenu_leavev" title="Link to this definition"></a><br /></dt>
 <dd><p>leave from system menu (pre-loaded graphics) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ui_error variable </p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv416ui_arc_set_valueP8lv_obj_ti">
-<span id="_CPPv316ui_arc_set_valueP8lv_obj_ti"></span><span id="_CPPv216ui_arc_set_valueP8lv_obj_ti"></span><span id="ui_arc_set_value__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1ab2058395cf78e2882eeff9a611a47325"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_arc_set_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_arc_set_valueP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv316ui_arc_set_valueP8lv_obj_ti"></span><span id="_CPPv216ui_arc_set_valueP8lv_obj_ti"></span><span id="ui_arc_set_value__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1adbd07049f9b77b28320413c6e47a811e"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_arc_set_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv416ui_arc_set_valueP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>set value to arc </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>trg</strong> – text object </p></li>
+<li><p><strong>trg</strong> – arc objects </p></li>
 <li><p><strong>val</strong> – new arc value </p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv440ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t">
-<span id="_CPPv340ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t"></span><span id="_CPPv240ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t"></span><span id="ui_set_text_from_with_division_value_arc__lv_obj_tP.lv_obj_tP.cCP.cCP.uint8_t"></span><span class="target" id="lvgl__addon_8h_1a59d32157ef9a7f41bb3b8c533b38e30c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_with_division_value_arc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">division</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv440ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv340ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t"></span><span id="_CPPv240ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t"></span><span id="ui_set_text_from_with_division_value_arc__lv_obj_tP.lv_obj_tP.cCP.cCP.uint8_t"></span><span class="target" id="lvgl__addon_8h_1a9cdc337fcff33794320a85292b0c9a5e"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_with_division_value_arc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">division</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv440ui_set_text_from_with_division_value_arcP8lv_obj_tP8lv_obj_tPKcPKc7uint8_t" title="Link to this definition"></a><br /></dt>
 <dd><p>set text from arc value with division </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -390,12 +476,15 @@
 <li><p><strong>division</strong> – arc division value </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv426ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc">
-<span id="_CPPv326ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv226ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_value_arc__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a6c4b37e1a5bed0cf6807fe09b345a138"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_value_arc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv326ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv226ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_value_arc__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1aed1e36ae46733ae89d36fbfa75fbd813"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_value_arc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426ui_set_text_from_value_arcP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set text from arc val </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -406,12 +495,15 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv419ui_slider_incrementP8lv_obj_tib">
-<span id="_CPPv319ui_slider_incrementP8lv_obj_tib"></span><span id="_CPPv219ui_slider_incrementP8lv_obj_tib"></span><span id="ui_slider_increment__lv_obj_tP.i.b"></span><span class="target" id="lvgl__addon_8h_1a997ea77cdfdd56de56fda9c9f0bce07e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_slider_increment</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419ui_slider_incrementP8lv_obj_tib" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv319ui_slider_incrementP8lv_obj_tib"></span><span id="_CPPv219ui_slider_incrementP8lv_obj_tib"></span><span id="ui_slider_increment__lv_obj_tP.i.b"></span><span class="target" id="lvgl__addon_8h_1a1d21246e1f8f399fa4c0b1d4efb38086"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_slider_increment</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419ui_slider_incrementP8lv_obj_tib" title="Link to this definition"></a><br /></dt>
 <dd><p>increment value of slider </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -421,12 +513,15 @@
 <li><p><strong>anim</strong> – enable anim? [true/false] </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv429ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc">
-<span id="_CPPv329ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv229ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_value_slider__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a76d1138648a7ec564b54b906420fd9f4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_value_slider</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv329ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv229ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_value_slider__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1ad73d37edd0b05bdc26e39031a173bbad"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_value_slider</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429ui_set_text_from_value_sliderP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set text from slider value </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -437,12 +532,15 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv422ui_slider_set_propertyP8lv_obj_tbi">
-<span id="_CPPv322ui_slider_set_propertyP8lv_obj_tbi"></span><span id="_CPPv222ui_slider_set_propertyP8lv_obj_tbi"></span><span id="ui_slider_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1a8f2508fda2386c83e9bd17375b684c9d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_slider_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_slider_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv322ui_slider_set_propertyP8lv_obj_tbi"></span><span id="_CPPv222ui_slider_set_propertyP8lv_obj_tbi"></span><span id="ui_slider_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1a3ed3cd6defab8c3d3dd1ed9b193f05ab"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_slider_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_slider_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
 <dd><p>set value on slider </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -452,12 +550,15 @@
 <li><p><strong>val</strong> – new value of slider </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv426ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc">
-<span id="_CPPv326ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv226ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_bar_value__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1aeee3d5c6aae04bd941cf1f4aca9595ad"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_bar_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv326ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv226ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_set_text_from_bar_value__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a3d74f8ca6f0acf3390f14df58f7382f5"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_bar_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426ui_set_text_from_bar_valueP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set text from slider value </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -468,12 +569,15 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv419ui_bar_set_propertyP8lv_obj_tbi">
-<span id="_CPPv319ui_bar_set_propertyP8lv_obj_tbi"></span><span id="_CPPv219ui_bar_set_propertyP8lv_obj_tbi"></span><span id="ui_bar_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1ac865e34ddf63070b237517bff336b2a4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_bar_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419ui_bar_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv319ui_bar_set_propertyP8lv_obj_tbi"></span><span id="_CPPv219ui_bar_set_propertyP8lv_obj_tbi"></span><span id="ui_bar_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1a8aee2c4db83ffb904b402bcf0d03454a"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_bar_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419ui_bar_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
 <dd><p>set bar value </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -483,12 +587,15 @@
 <li><p><strong>val</strong> – new value </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv425ui_set_text_from_variableP8lv_obj_tiPKcPKc">
-<span id="_CPPv325ui_set_text_from_variableP8lv_obj_tiPKcPKc"></span><span id="_CPPv225ui_set_text_from_variableP8lv_obj_tiPKcPKc"></span><span id="ui_set_text_from_variable__lv_obj_tP.i.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a417997bb0f87357991a5287ccfdd8d8e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_variable</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_text_from_variableP8lv_obj_tiPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv325ui_set_text_from_variableP8lv_obj_tiPKcPKc"></span><span id="_CPPv225ui_set_text_from_variableP8lv_obj_tiPKcPKc"></span><span id="ui_set_text_from_variable__lv_obj_tP.i.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a6c6adbd3017c8cfcf2114f066c2b60b9"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text_from_variable</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_text_from_variableP8lv_obj_tiPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set text from variable value </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -499,17 +606,20 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv420ui_text_set_propertyP8lv_obj_tiPKc">
-<span id="_CPPv320ui_text_set_propertyP8lv_obj_tiPKc"></span><span id="_CPPv220ui_text_set_propertyP8lv_obj_tiPKc"></span><span id="ui_text_set_property__lv_obj_tP.i.cCP"></span><span class="target" id="lvgl__addon_8h_1a21febfe6d5787fe1637373964ddba264"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_text_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420ui_text_set_propertyP8lv_obj_tiPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv320ui_text_set_propertyP8lv_obj_tiPKc"></span><span id="_CPPv220ui_text_set_propertyP8lv_obj_tiPKc"></span><span id="ui_text_set_property__lv_obj_tP.i.cCP"></span><span class="target" id="lvgl__addon_8h_1ac867b7e20cba265e17110ca783b87314"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_text_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv420ui_text_set_propertyP8lv_obj_tiPKc" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv414ui_opacity_setP8lv_obj_ti">
-<span id="_CPPv314ui_opacity_setP8lv_obj_ti"></span><span id="_CPPv214ui_opacity_setP8lv_obj_ti"></span><span id="ui_opacity_set__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1aa6bde794a2c95307be7a218686a7048a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_opacity_set</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414ui_opacity_setP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv314ui_opacity_setP8lv_obj_ti"></span><span id="_CPPv214ui_opacity_setP8lv_obj_ti"></span><span id="ui_opacity_set__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1a9d3b4c37ca873eb1ee685dc4f94a32b6"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_opacity_set</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414ui_opacity_setP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>set opa (alpha) to object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -518,12 +628,15 @@
 <li><p><strong>val</strong> – new lvl of opacity (alpha) [0 … 255] </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv421ui_set_value_dropdownP8lv_obj_ti">
-<span id="_CPPv321ui_set_value_dropdownP8lv_obj_ti"></span><span id="_CPPv221ui_set_value_dropdownP8lv_obj_ti"></span><span id="ui_set_value_dropdown__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1a7bcadc95016be1b1af6a238ef77cfea5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_value_dropdown</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_set_value_dropdownP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv321ui_set_value_dropdownP8lv_obj_ti"></span><span id="_CPPv221ui_set_value_dropdownP8lv_obj_ti"></span><span id="ui_set_value_dropdown__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1aed6f118d4da5cac2b9a575048a5a835a"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_value_dropdown</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_set_value_dropdownP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>set dropdown selected value </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -532,17 +645,20 @@
 <li><p><strong>val</strong> – new <code class="docutils literal notranslate"><span class="pre">selected</span></code> value </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv421ui_image_set_propertyP8lv_obj_tbP7uint8_t">
-<span id="_CPPv321ui_image_set_propertyP8lv_obj_tbP7uint8_t"></span><span id="_CPPv221ui_image_set_propertyP8lv_obj_tbP7uint8_t"></span><span id="ui_image_set_property__lv_obj_tP.b.uint8_tP"></span><span class="target" id="lvgl__addon_8h_1a4700c155bf2e7fa77c21901619a9cc23"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_image_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_image_set_propertyP8lv_obj_tbP7uint8_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv321ui_image_set_propertyP8lv_obj_tbP7uint8_t"></span><span id="_CPPv221ui_image_set_propertyP8lv_obj_tbP7uint8_t"></span><span id="ui_image_set_property__lv_obj_tP.b.uint8_tP"></span><span class="target" id="lvgl__addon_8h_1a5a1c9da9eebd1264e813bce241e8f5a2"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_image_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv421ui_image_set_propertyP8lv_obj_tbP7uint8_t" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv422ui_roller_set_propertyP8lv_obj_tbi">
-<span id="_CPPv322ui_roller_set_propertyP8lv_obj_tbi"></span><span id="_CPPv222ui_roller_set_propertyP8lv_obj_tbi"></span><span id="ui_roller_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1ab83fa8c02e409641a73e03a08e36af5c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_roller_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_roller_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv322ui_roller_set_propertyP8lv_obj_tbi"></span><span id="_CPPv222ui_roller_set_propertyP8lv_obj_tbi"></span><span id="ui_roller_set_property__lv_obj_tP.b.i"></span><span class="target" id="lvgl__addon_8h_1af52cb33d8b023520c67ee97429ee22e9"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_roller_set_property</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">anim</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_roller_set_propertyP8lv_obj_tbi" title="Link to this definition"></a><br /></dt>
 <dd><p>set value on roller </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -552,12 +668,15 @@
 <li><p><strong>val</strong> – new value of slider </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv422ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t">
-<span id="_CPPv322ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t"></span><span id="_CPPv222ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t"></span><span id="ui_keyboard_set_target__lv_obj_tP.lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1a4b41fce7e2b41e0528a5fac4f648f1ef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_keyboard_set_target</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">keyboard</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">textarea</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv322ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t"></span><span id="_CPPv222ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t"></span><span id="ui_keyboard_set_target__lv_obj_tP.lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1af262f1dcf5a01e85f071f261be384268"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_keyboard_set_target</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">keyboard</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">textarea</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422ui_keyboard_set_targetP8lv_obj_tP8lv_obj_t" title="Link to this definition"></a><br /></dt>
 <dd><p>set/unset flag from object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -566,12 +685,15 @@
 <li><p><strong>textarea</strong> – <code class="docutils literal notranslate"><span class="pre">textarea</span></code> object to which you want to bind the keyboard </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv414ui_flag_modifyP8lv_obj_t7int32_ti">
-<span id="_CPPv314ui_flag_modifyP8lv_obj_t7int32_ti"></span><span id="_CPPv214ui_flag_modifyP8lv_obj_t7int32_ti"></span><span id="ui_flag_modify__lv_obj_tP.int32_t.i"></span><span class="target" id="lvgl__addon_8h_1a9c825199b473d5891db86b68b191874f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_flag_modify</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">flag</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414ui_flag_modifyP8lv_obj_t7int32_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv314ui_flag_modifyP8lv_obj_t7int32_ti"></span><span id="_CPPv214ui_flag_modifyP8lv_obj_t7int32_ti"></span><span id="ui_flag_modify__lv_obj_tP.int32_t.i"></span><span class="target" id="lvgl__addon_8h_1ab4caa5b07151e80935218aaf4d368e54"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_flag_modify</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">flag</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414ui_flag_modifyP8lv_obj_t7int32_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>set/unset flag from object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -581,12 +703,15 @@
 <li><p><strong>value</strong> – type of interaction with flag </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv415ui_state_modifyP8lv_obj_t7int32_ti">
-<span id="_CPPv315ui_state_modifyP8lv_obj_t7int32_ti"></span><span id="_CPPv215ui_state_modifyP8lv_obj_t7int32_ti"></span><span id="ui_state_modify__lv_obj_tP.int32_t.i"></span><span class="target" id="lvgl__addon_8h_1a93d9c8e86d879f0c2e05871975ea122d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_state_modify</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415ui_state_modifyP8lv_obj_t7int32_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv315ui_state_modifyP8lv_obj_t7int32_ti"></span><span id="_CPPv215ui_state_modifyP8lv_obj_t7int32_ti"></span><span id="ui_state_modify__lv_obj_tP.int32_t.i"></span><span class="target" id="lvgl__addon_8h_1ad27557641d2fb00ef344df79dde13799"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_state_modify</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415ui_state_modifyP8lv_obj_t7int32_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>set/unset state from object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -596,12 +721,15 @@
 <li><p><strong>value</strong> – type of interaction with state </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv431ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc">
-<span id="_CPPv331ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv231ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_checked_state_set_text_value__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a366504902cef15ab425183f860711b22"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_checked_state_set_text_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txt_on</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txt_off</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv331ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="_CPPv231ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc"></span><span id="ui_checked_state_set_text_value__lv_obj_tP.lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a71de6f9db0abf48a956820c5f8ee9df9"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_checked_state_set_text_value</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">src</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txt_on</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">txt_off</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431ui_checked_state_set_text_valueP8lv_obj_tP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
@@ -817,8 +945,13 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv415ui_spinbox_stepP8lv_obj_ti">
-<span id="_CPPv315ui_spinbox_stepP8lv_obj_ti"></span><span id="_CPPv215ui_spinbox_stepP8lv_obj_ti"></span><span id="ui_spinbox_step__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1a5133a85bf372e4bab354200038d6aae2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_spinbox_step</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415ui_spinbox_stepP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv315ui_spinbox_stepP8lv_obj_ti"></span><span id="_CPPv215ui_spinbox_stepP8lv_obj_ti"></span><span id="ui_spinbox_step__lv_obj_tP.i"></span><span class="target" id="lvgl__addon_8h_1ab86f4192034e25144588cad3be07330b"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_spinbox_step</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415ui_spinbox_stepP8lv_obj_ti" title="Link to this definition"></a><br /></dt>
 <dd><p>todo </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ui_error variable </p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="cpp function">
@@ -833,7 +966,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv425ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb">
-<span id="_CPPv325ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb"></span><span id="_CPPv225ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb"></span><span id="ui_set_time_text_from_rtc__lv_obj_tP.cCP.cCP.b"></span><span class="target" id="lvgl__addon_8h_1aa95cb266b5a3e91c14c0b9966fd7eb22"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_time_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tick</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv325ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb"></span><span id="_CPPv225ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb"></span><span id="ui_set_time_text_from_rtc__lv_obj_tP.cCP.cCP.b"></span><span class="target" id="lvgl__addon_8h_1a3ebd044a745f7a767d29575fd60364ab"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_time_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tick</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_time_text_from_rtcP8lv_obj_tPKcPKcb" title="Link to this definition"></a><br /></dt>
 <dd><p>set time from rtc module (recommended) </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -844,12 +977,15 @@
 <li><p><strong>tick</strong> – add <code class="docutils literal notranslate"><span class="pre">:</span></code> to time text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv425ui_set_date_text_from_rtcP8lv_obj_tPKcPKc">
-<span id="_CPPv325ui_set_date_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="_CPPv225ui_set_date_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="ui_set_date_text_from_rtc__lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a018bbc884af73b8662bab8f6f78b062e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_date_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_date_text_from_rtcP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv325ui_set_date_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="_CPPv225ui_set_date_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="ui_set_date_text_from_rtc__lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a2e320b9cb647ef1d05ba920a47218672"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_date_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425ui_set_date_text_from_rtcP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set date from rtc module (recommended) </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -859,12 +995,15 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv429ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc">
-<span id="_CPPv329ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="_CPPv229ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="ui_set_timedate_text_from_rtc__lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1af6eb5b9345e43aacd9d4c8aaac85d524"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_timedate_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv329ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="_CPPv229ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc"></span><span id="ui_set_timedate_text_from_rtc__lv_obj_tP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1a73d7bcebe9bf3b46f7bca1eabd720cdf"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_timedate_text_from_rtc</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv429ui_set_timedate_text_from_rtcP8lv_obj_tPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set time &amp; date from rtc module (not recommended, better use separate functions with date &amp; time) </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -874,12 +1013,15 @@
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
+</dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv412ui_set_imageP8lv_obj_tP7uint8_t">
-<span id="_CPPv312ui_set_imageP8lv_obj_tP7uint8_t"></span><span id="_CPPv212ui_set_imageP8lv_obj_tP7uint8_t"></span><span id="ui_set_image__lv_obj_tP.uint8_tP"></span><span class="target" id="lvgl__addon_8h_1ade943170fc9fe16a466be163e1aea146"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_image</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412ui_set_imageP8lv_obj_tP7uint8_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv312ui_set_imageP8lv_obj_tP7uint8_t"></span><span id="_CPPv212ui_set_imageP8lv_obj_tP7uint8_t"></span><span id="ui_set_image__lv_obj_tP.uint8_tP"></span><span class="target" id="lvgl__addon_8h_1ab067684c03effa4d4b9e3cbeb2fbfb1a"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_image</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">val</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412ui_set_imageP8lv_obj_tP7uint8_t" title="Link to this definition"></a><br /></dt>
 <dd><p>set image on object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -887,6 +1029,9 @@
 <li><p><strong>target</strong> – object whose image will be changed </p></li>
 <li><p><strong>val</strong> – image </p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
 </dd>
 </dl>
 </dd></dl>
@@ -904,18 +1049,21 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv431ui_set_arc_value_from_speed_gpsP8lv_obj_t">
-<span id="_CPPv331ui_set_arc_value_from_speed_gpsP8lv_obj_t"></span><span id="_CPPv231ui_set_arc_value_from_speed_gpsP8lv_obj_t"></span><span id="ui_set_arc_value_from_speed_gps__lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1a060a3d4b5e846b984ae52e981f36dc63"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_arc_value_from_speed_gps</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431ui_set_arc_value_from_speed_gpsP8lv_obj_t" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv331ui_set_arc_value_from_speed_gpsP8lv_obj_t"></span><span id="_CPPv231ui_set_arc_value_from_speed_gpsP8lv_obj_t"></span><span id="ui_set_arc_value_from_speed_gps__lv_obj_tP"></span><span class="target" id="lvgl__addon_8h_1a5260437be77c2f792e6670c7dd9401ac"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_arc_value_from_speed_gps</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv431ui_set_arc_value_from_speed_gpsP8lv_obj_t" title="Link to this definition"></a><br /></dt>
 <dd><p>get speed from gps and set to arc object </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>target</strong> – the arc to which the speed value transmitted by the GPS will be set </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv411ui_set_textP8lv_obj_tPKcPKcPKc">
-<span id="_CPPv311ui_set_textP8lv_obj_tPKcPKcPKc"></span><span id="_CPPv211ui_set_textP8lv_obj_tPKcPKcPKc"></span><span id="ui_set_text__lv_obj_tP.cCP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1ab4460649335df5e34f2404db19df2d4e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">text</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411ui_set_textP8lv_obj_tPKcPKcPKc" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv311ui_set_textP8lv_obj_tPKcPKcPKc"></span><span id="_CPPv211ui_set_textP8lv_obj_tPKcPKcPKc"></span><span id="ui_set_text__lv_obj_tP.cCP.cCP.cCP"></span><span class="target" id="lvgl__addon_8h_1af3ea42ebca6f1532a852793ebe7b82b4"></span><a class="reference internal" href="#_CPPv48ui_error" title="ui_error"><span class="n"><span class="pre">ui_error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ui_set_text</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">lv_obj_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">text</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">prefix</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">postfix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411ui_set_textP8lv_obj_tPKcPKcPKc" title="Link to this definition"></a><br /></dt>
 <dd><p>set text </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -924,6 +1072,9 @@
 <li><p><strong>prefix</strong> – prefix of text </p></li>
 <li><p><strong>postfix</strong> – prefix of text </p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ui_error variable </p>
 </dd>
 </dl>
 </dd></dl>
