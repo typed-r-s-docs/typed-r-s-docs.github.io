@@ -9,10 +9,7 @@ Launcher
 
 Download Launcher
 -----------------
-
-.. image:: https://img.shields.io/badge/Download-Launcher-blue
-   :target: https://drive.google.com/uc?id=1LU95CkoEMMt2TZmObLmNdWCo1q96-59f&export=download
-   :alt: Download Launcher
+   https://drive.google.com/file/d/117Du6WQG5foiS-_IZ3w1iOL63budaP8i/view?usp=sharing
 
 Updater
 =======
@@ -24,19 +21,7 @@ Installation:
 
 - The updater requires `Python <https://www.python.org/downloads/>`_ version 3.12 or higher and a `Git <https://git-scm.com/downloads>`_ client to be installed.
 
-- Download Updater client and drivers:
-
-  .. image:: https://img.shields.io/badge/Download-Updater-blue
-     :target: Vega RS Updater.exe
-     :alt: Download Updater
-
-  .. image:: https://img.shields.io/badge/Download-diskDriver-blue
-     :target: cdc.cat
-     :alt: Download Disk Driver
- 
-  .. image:: https://img.shields.io/badge/Download-usbDriver-blue
-     :target: fsl_ucwxp.inf
-     :alt: Download USB Driver
+- Download Updater client and drivers in laucher.
 
 - Before installing/launching the application, install the driver that comes with the standalone version installer (``fsl_ucwxp``).
 - After that, launch the panel and connect it to the computer via USB. If the driver is installed correctly, you will see the panel name, application version, and DFP version.

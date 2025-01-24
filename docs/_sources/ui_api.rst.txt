@@ -1,4 +1,18 @@
 UI API
 ======================================================
 
-.. doxygenfile:: lvgl_addon.h
+Types & Defs
+-----------------
+.. doxygenfile:: lvgl_addon_types.h
+
+Engine working
+-----------------
+.. doxygenfile:: lvgl_addon_engine.h
+
+Objects working
+-----------------
+.. doxygenfile:: lvgl_addon_api.h
+
+Objects working (os safed)
+-----------------
+.. doxygenfile:: lvgl_addon_api_os_port.h
