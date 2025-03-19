@@ -46,11 +46,8 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Launcher</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#download-launcher">Download Launcher</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#updater">Updater</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#working">Working:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-firmware">Creating firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-firmware-on-panel">Loading firmware on panel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">Getting Start</a></li>
@@ -96,39 +93,42 @@
 <div><p><a class="reference external" href="https://drive.google.com/file/d/117Du6WQG5foiS-_IZ3w1iOL63budaP8i/view?usp=sharing">https://drive.google.com/file/d/117Du6WQG5foiS-_IZ3w1iOL63budaP8i/view?usp=sharing</a></p>
 </div></blockquote>
 </section>
-</section>
-<section id="updater">
-<h1>Updater<a class="headerlink" href="#updater" title="Link to this heading"></a></h1>
-<p>Updater allows you to reflash the panel, download the firmware from the Git repository, and see what it sends to the terminal.</p>
-<section id="installation">
-<h2>Installation:<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<section id="creating-firmware">
+<h2>Creating firmware<a class="headerlink" href="#creating-firmware" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>The updater requires <a class="reference external" href="https://www.python.org/downloads/">Python</a> version 3.12 or higher and a <a class="reference external" href="https://git-scm.com/downloads">Git</a> client to be installed.</p></li>
-<li><p>Download Updater client and drivers in laucher.</p></li>
-<li><p>Before installing/launching the application, install the driver that comes with the standalone version installer (<code class="docutils literal notranslate"><span class="pre">fsl_ucwxp</span></code>).</p></li>
-<li><p>After that, launch the panel and connect it to the computer via USB. If the driver is installed correctly, you will see the panel name, application version, and DFP version.</p></li>
-<li><p>If for some reason the panel is not recognized, try reinstalling the driver.</p></li>
+<li><p>To create firmware, compile the Keil project, then use the <code class="docutils literal notranslate"><span class="pre">Firmware</span> <span class="pre">creatore</span></code> in SDK. The firmware is generated in the <code class="docutils literal notranslate"><span class="pre">output</span></code> folder, located in the root of the util.</p></li>
 </ul>
 </section>
-<section id="working">
-<h2>Working:<a class="headerlink" href="#working" title="Link to this heading"></a></h2>
-<p>Flashing the panel if you already have the application file
-- Press the <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Firmware</span> <span class="pre">file</span></code> button.
-- If the application file is correct, the button for uploading the file to the panel will be unlocked.
-- If the file upload to the panel was successful, the flashing start button will be unlocked.</p>
-<p>Flashing the panel if you do not have the application file
-- Press the <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Firmware</span></code> button.
-- In the window that opens, you will need to specify a link to the repository with the firmware files (for example, <a class="reference external" href="https://github.com/example/example">https://github.com/example/example</a>). If you are not a developer, request this link from the company selling you the panel.
-- After entering the link and pressing the Enter key, you will see a list of available firmware. Select the one you need and close the installation window.
-- All subsequent steps are identical to the method when you already have the firmware file.</p>
-<p>Creating firmware</p>
-<p><strong>Available only in the Evolved version, available only to developers as part of the SDK</strong></p>
-<ul class="simple">
-<li><p>To create firmware, compile the Keil project, then click the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">firmware</span></code> button. The firmware is generated in the <code class="docutils literal notranslate"><span class="pre">output</span></code> folder, located in the root of the updater.</p></li>
-<li><p>To release firmware on Git, create a tag inside the repository that includes only the <code class="docutils literal notranslate"><span class="pre">image.bin</span></code> file (firmware file).</p></li>
-<li><p>If the repository is private, grant access to the repository to the account of the person flashing the panel. Alternatively, create an account, give it access to the repository, and share the account with those who need it.</p></li>
-<li><p>If the repository is open, no further action is required.</p></li>
+<section id="loading-firmware-on-panel">
+<h2>Loading firmware on panel<a class="headerlink" href="#loading-firmware-on-panel" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Network Setup:
+- Open “Network &amp; Internet settings” in Windows
+- Click “Change adapter options”
+- Right-click on your Ethernet adapter -&gt; “Properties”
+- Select “Internet Protocol Version 4 (TCP/IPv4)” -&gt; “Properties”
+- Configure the following settings:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>IP address: 192.168.111.12</p></li>
+<li><p>Subnet mask: 255.255.255.0</p></li>
+<li><p>Default gateway: leave empty</p></li>
+<li><p>Click “OK” to save changes</p></li>
 </ul>
+</div></blockquote>
+</li>
+<li><p>Panel Connection:
+- Connect the panel to your computer using an Ethernet cable
+- Ensure the panel is powered on and booted up
+- Open a web browser and navigate to: <a class="reference external" href="http://192.168.111.11">http://192.168.111.11</a>
+- The panel’s web interface should load</p></li>
+<li><p>Firmware Update:
+- Locate the firmware update section in the web interface
+- Click “Choose File” and select or drop your image.bin file
+- Wait for the update process to complete
+- The panel will automatically restart after successful loading</p></li>
+</ol>
+<p>Note: Do not disconnect power during the firmware update process.</p>
 </section>
 </section>
 
